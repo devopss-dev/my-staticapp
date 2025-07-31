@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone Repo') {
             steps {
-                git 'git@github.com:devopss-dev/my-staticapp.git'
+                git 'https://github.com/devopss-dev/my-staticapp.git'
             }
         }
 

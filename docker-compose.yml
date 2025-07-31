@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  web:
+    image: my-static-app:latest
+    ports:
+      - "8080:80"
+    deploy:
+      replicas: 2
+

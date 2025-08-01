@@ -4,7 +4,7 @@ services:
   web:
     image: my-static-app:latest
     ports:
-      - "8080:80"
+      - "9090:80"
     deploy:
       replicas: 2
 

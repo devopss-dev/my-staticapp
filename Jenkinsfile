@@ -4,7 +4,9 @@ pipeline {
     stages {
         stage('Clone Repo') {
             steps {
-                git 'https://github.com/devopss-dev/my-staticapp.git'
+                git branch: 'main',
+                    credentialsId: 'git-credentials',
+                     url: 'https://github.com/devopss-dev/my-staticapp.git'
             }
         }
 
@@ -21,4 +23,5 @@ pipeline {
         }
     }
 }
+
 
